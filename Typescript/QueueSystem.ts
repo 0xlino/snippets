@@ -53,14 +53,5 @@ const addManyTasks = (count: number, func:any, time: any) => {
     }
 }
 
-myQueue.enqueue(() => {
-    console.log("Task 1 executed at " + new Date());
-}, Date.now() + 3000); // Schedule task 1 to run after 3 seconds
-  
-myQueue.enqueue(() => {
-    console.log("Task 2 executed at " + new Date());
-}, Date.now() + 5000); // Schedule task 2 to run after 5 seconds
-
-setInterval(() => {
-    myQueue.run();
-}, 1000);
+export default Queue;
+export { QueueItem, addManyTasks };
