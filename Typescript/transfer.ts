@@ -63,12 +63,5 @@ const transferSomeDust = async (argv: ITransferSomeDust) => {
     }
 }
 
-transferSomeDust({
-    fromPrivate: "0x0000000",
-    to: "0x0000000",
-    provider: "http://",
-    value: "0x0000000"
-}).catch((error) => {
-  console.error(error);
-  process.exit(0);
-});
+export default transferSomeDust;
+export { ITransferSomeDust };
