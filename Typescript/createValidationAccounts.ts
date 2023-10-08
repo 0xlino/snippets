@@ -1,5 +1,6 @@
 import Web3 from 'web3';
-import fs from 'fs';
+// import fs from 'fs';
+import * as fs from 'fs'
 
 /**
  * @interface IcreateValidationAccounts
